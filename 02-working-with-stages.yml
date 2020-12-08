@@ -20,6 +20,7 @@ stages:
     - bash: echo $(System.DefaultWorkingDirectory)
     - bash: ls -R $(System.DefaultWorkingDirectory)
     - bash: echo $(Build.ArtifactStagingDirectory)
+    - bash: echo $(Agent.JobStatus)
 
 
 # - stage: DevDeploy
