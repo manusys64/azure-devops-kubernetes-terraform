@@ -22,6 +22,7 @@ stages:
     - bash: echo $(Build.ArtifactStagingDirectory)
     - bash: echo $(Agent.JobStatus)
     - bash: echo $(Agent.Name)
+    - bash: echo $(Agent.OS)
 
 
 # - stage: DevDeploy
