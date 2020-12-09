@@ -23,10 +23,10 @@ stages:
     - bash: echo $(Agent.JobStatus)
     - bash: echo $(Agent.Name)
     - bash: echo $(Agent.OS)
-    - bash: java-version
-    - bash: node-version
-    - bash: python-version
-    - bash: mvn-version
+    - bash: java -version
+    - bash: node --version
+    - bash: python --version
+    - bash: mvn -version
     - bash: ls -R $(Build.ArtifactStagingDirectory)
     - task: CopyFiles@2
       inputs:
