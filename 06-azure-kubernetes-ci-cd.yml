@@ -53,7 +53,7 @@ stages:
         action: 'deploy'
         kubernetesServiceConnection: 'azure-kubernetes-cluster-connection'
         namespace: 'default'
-        manifests: '$(System.ArtifactsDirectory)/deployment.yaml'
+        manifests: '$(System.ArtifactsDirectory)/configuration/kubernetes/deployment.yaml'
         containers: 'manusysadmin/currency-exchange-devops:$(tag)'
 # Stage 2
   # Download K8S Files
